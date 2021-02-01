@@ -33,33 +33,6 @@ client.on("message", async message => {
   }
 });
 
-client.on("ready", () =>{
-
-  
-  let activities =[
-    ': use O!help para esibir a lista de comandos',
-    `${client.guilds.cache.size} servidores`,
-    `${client.users.cache.size} usuarios`,
-    ': eu fui feita em 4 dias',
-    ': minha foto foi escolida por Mio_Br_chan',
-    ': 😢 + 🍪 = 😄',
-    ': 🤵 💓 👰',
-    ': 🔼🔼🔽🔽◀▶◀▶🅱🅰',
-    ': eu adoro sorvete 🍨 e vocÊ ?',
-    ': eu sempre to de vela e vendo os ships',
-    ': meu criador  ama  raposas  🦊 ',
-    ": https://www.youtube.com/channel/UC6XZHvGeNM3N8HPo0jT8Oeg",
-    ':passa la no meu servido para me ajudar a ficar online (https://discord.gg/qxZTkDefNz)'
-  
-  ],
-
-i = 0;
-setInterval(() => client.user.setActivity(`${activities[i++ % activities.length]}`, {
-  type: "WATCHING"
-}), 6000);
-console.log("estou online") // "LISTENING","WATCHING","PLAYING","STREAMING"
-                           // "ouvindo","assistindo","jogando","transmitindo"    
-    
-});
-
 client.login(process.env.TOKEN); //Ligando o Bot caso ele consiga acessar o token
+
+                
